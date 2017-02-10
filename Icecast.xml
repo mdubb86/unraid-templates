@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Icecast</Name>
+  <Description>Docker container with Icecast server</Description>
+  <Registry>https://hub.docker.com/r/duxducis/pava3/</Registry>
+  <Repository>duxducis/pava3</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+     <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>Config directory on unRaid</HostDir>
+      <ContainerDir>/conf</ContainerDir>
+    </Volume>
+  </Data>
+  <Version>1.0</Version>
+  <Banner>https://raw.githubusercontent.com/mdubb86/unraid-templates/master/images/icecast_banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/mdubb86/unraid-templates/master/images/icecast_logo.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
