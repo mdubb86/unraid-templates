@@ -2,8 +2,8 @@
 <Container>
   <Name>Icecast</Name>
   <Description>Docker container with Icecast server</Description>
-  <Registry>https://hub.docker.com/r/duxducis/pava3/</Registry>
-  <Repository>duxducis/pava3</Repository>
+  <Registry>https://hub.docker.com/r/mdubb86/icecast/</Registry>
+  <Repository>mdubb86/icecast</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
