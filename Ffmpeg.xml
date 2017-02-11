@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>FFMPEG</Name>
+  <Description>Docker container to run FFMPEG command</Description>
+  <Registry>https://hub.docker.com/r/mdubb86/ffmpeg/</Registry>
+  <Repository>mdubb86/ffmpeg</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>CMD</Name>
+      <Value>ffmpeg arguments</Value>
+    </Variable>
+  </Environment>
+  <Networking/>
+  <Data/>
+  <Version>1.0</Version>
+  <Banner>https://raw.githubusercontent.com/mdubb86/unraid-templates/master/images/ffmpeg_banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/mdubb86/unraid-templates/master/images/ffmpeg_logo.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
