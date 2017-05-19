@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Vapor</Name>
+  <Description>Docker container to run Vapor Server</Description>
+  <Registry>https://hub.docker.com/r/mdubb86/vapor</Registry>
+  <Repository>mdubb86/vapor</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+     <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>Config directory on unRaid</HostDir>
+      <ContainerDir>/conf</ContainerDir>
+    </Volume>
+    <Volume>
+      <HostDir>Live photos directory on unRaid</HostDir>
+      <ContainerDir>/live_photos</ContainerDir>
+    </Volume>
+    <Volume>
+      <HostDir>Pending photos directory on unRaid</HostDir>
+      <ContainerDir>/pending_photos</ContainerDir>
+    </Volume>
+    <Volume>
+      <HostDir>Live videos directory on unRaid</HostDir>
+      <ContainerDir>/live_videos</ContainerDir>
+    </Volume>
+    <Volume>
+      <HostDir>Pending videos directory on unRaid</HostDir>
+      <ContainerDir>/pending_videos</ContainerDir>
+    </Volume>
+  </Data>
+  <Version>1.0</Version>
+  <Banner>https://cdn0.iconfinder.com/data/icons/weather-bold/142/mist-512.png</Banner>
+  <Icon>https://cdn0.iconfinder.com/data/icons/weather-bold/142/mist-512.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
